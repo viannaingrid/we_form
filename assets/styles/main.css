@@ -13,10 +13,17 @@ body {
   font-size: 1.6rem;
 }
 
+.content {
+  display: grid;
+  grid-template-areas: ". . . . ." ". hero . form ." ". hero . form ." ". . . . .";
+  gap: 8.5rem;
+}
+
 aside {
   font-size: 5rem;
   font-weight: 500;
   line-height: 4.688rem;
+  grid-area: hero;
 }
 aside span {
   color: #FF567B;
@@ -25,8 +32,10 @@ aside span {
 main {
   width: 60rem;
   height: 52rem;
-  border: 0.1rem solid rgba(0, 0, 0, 0.95);
+  border: 0.1rem solid rgba(0, 0, 0, 0.18);
   padding: 4.4rem 5.7rem;
+  border-radius: 1.2rem;
+  grid-area: form;
 }
 main h2 {
   max-width: 43rem;
@@ -50,8 +59,21 @@ main .actions a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5.4rem;
 }
 main .actions a + a {
   background-color: #FF5678;
   margin-top: 4.8rem;
+}
+
+footer p {
+  font-size: 1.6rem;
+  margin-top: 8rem;
+}
+footer a {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  display: block;
+  text-align: center;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */
