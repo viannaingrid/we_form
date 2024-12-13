@@ -5,8 +5,12 @@
 }
 
 aside {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 4rem;
     font-weight: 500;
     line-height: 4.688rem;
+
+    span {
+        color: #FF567B;
+    }
 }
