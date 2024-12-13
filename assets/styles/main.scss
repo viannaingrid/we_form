@@ -9,6 +9,10 @@
     font-size: 62.5%;
 }
 
+body {
+    font-size: 1.6rem;
+}
+
 aside {
     font-size: 5rem;
     font-weight: 500;
@@ -32,5 +36,9 @@ main {
 
     span {
         color: #FF567B;
+    }
+
+    .actions a:first-child {
+        background-color: #35E6E9;
     }
 }

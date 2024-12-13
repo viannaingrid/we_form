@@ -9,6 +9,10 @@
   font-size: 62.5%;
 }
 
+body {
+  font-size: 1.6rem;
+}
+
 aside {
   font-size: 5rem;
   font-weight: 500;
@@ -30,4 +34,7 @@ main h2 {
 }
 main span {
   color: #FF567B;
+}
+main .actions a:first-child {
+  background-color: #35E6E9;
 }/*# sourceMappingURL=main.css.map */
