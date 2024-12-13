@@ -27,6 +27,7 @@ main {
     width: 60rem;
     height: 52rem;
     border: .1rem solid rgba(0,0,0,.95);
+    padding: 4.4rem 5.7rem;
 
     h2 {
         max-width: 43rem;
@@ -38,7 +39,26 @@ main {
         color: #FF567B;
     }
 
-    .actions a:first-child {
-        background-color: #35E6E9;
+    .actions {
+        display: flex;
+        flex-flow: column wrap;
+
+        a {
+            border-radius: 1.2rem;
+            text-decoration: none;
+            font-size: 2.4rem;
+            height: 5.5rem;
+            background-color: #35E6E9;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a + a {
+            background-color: #FF5678;
+            margin-top: 4.8rem;
+        }
     }
+
 }
