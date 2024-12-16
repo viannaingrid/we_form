@@ -125,15 +125,17 @@ select#input-field {
      -moz-appearance: none;
           appearance: none;
 }
-select#input-field::after {
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: red;
-  content: "svdchvs";
+
+.select-div::after {
+  top: 28rem;
+  right: 8.89rem;
+  font-size: 2.4rem;
+  content: "\f107";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
   position: absolute;
   z-index: 1;
+  color: #35E6E9;
 }
 
 .points {

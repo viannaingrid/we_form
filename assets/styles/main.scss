@@ -136,18 +136,20 @@ select#input-field {
     color: #bab7b7;
     padding: 0 0 0 1rem;
     appearance: none;
-
-    &::after {
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: red;
-        content: "svdchvs";
-        position: absolute;
-        z-index: 1;
-    }
 }
+
+.select-div::after {
+    top: 28rem;
+    right: 8.89rem;
+    font-size: 2.4rem;
+    content: "\f107";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    color: #35E6E9;
+}
+
 
 .points {
     position: relative;
