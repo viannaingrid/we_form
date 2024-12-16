@@ -7,6 +7,8 @@
 
 :root {
   font-size: 62.5%;
+  --default-border: .1rem solid rgba(0,0,0,.15);
+  --default-border-radius: 1.2rem;
 }
 
 body {
@@ -32,9 +34,9 @@ aside span {
 main {
   width: 60rem;
   height: 52rem;
-  border: 0.1rem solid rgba(0, 0, 0, 0.18);
+  border: var(--default-border);
   padding: 4.4rem 5.7rem;
-  border-radius: 1.2rem;
+  border-radius: var(--default-border-radius);
   grid-area: form;
 }
 main h2 {
@@ -50,7 +52,7 @@ main .actions {
   flex-flow: column wrap;
 }
 main .actions a {
-  border-radius: 1.2rem;
+  border-radius: var(--default-border-radius);
   text-decoration: none;
   font-size: 2.4rem;
   height: 5.5rem;
@@ -82,6 +84,22 @@ input {
   width: 489px;
   height: 5.5rem;
   background: #fff;
-  border: 0.1rem solid rgba(0, 0, 0, 0.15);
-  border: 1.2rem;
+  border: var(--default-border);
+  border-radius: var(--default-border-radius);
+}
+input::-moz-placeholder {
+  color: #bab7b7;
+  padding: 0 0 0 1rem;
+}
+input::placeholder {
+  color: #bab7b7;
+  padding: 0 0 0 1rem;
+}
+
+label {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 1.2rem 0 1rem 0;
+  display: block;
 }/*# sourceMappingURL=main.css.map */
