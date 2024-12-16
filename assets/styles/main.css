@@ -109,8 +109,12 @@ input::placeholder {
 }
 input + button {
   position: absolute;
-  right: 0;
-  top: 2.7rem;
+  right: -10rem;
+  top: 5rem;
+}
+
+.points {
+  position: relative;
 }
 
 label {
