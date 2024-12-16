@@ -92,22 +92,22 @@ header i {
   color: #FF567B;
 }
 
-input {
+input, select {
   width: 489px;
   height: 5.5rem;
   background: #fff;
   border: var(--default-border);
   border-radius: var(--default-border-radius);
 }
-input::-moz-placeholder {
+input::-moz-placeholder, select::-moz-placeholder {
   color: #bab7b7;
   padding: 0 0 0 1rem;
 }
-input::placeholder {
+input::placeholder, select::placeholder {
   color: #bab7b7;
   padding: 0 0 0 1rem;
 }
-input + button {
+input + button, select + button {
   position: absolute;
   right: -1.2rem;
   top: 4.525rem;
@@ -116,6 +116,24 @@ input + button {
   color: #35E6E9;
   font-size: 2.4rem;
   cursor: pointer;
+}
+
+select#input-field {
+  color: #bab7b7;
+  padding: 0 0 0 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+select#input-field::after {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  content: "svdchvs";
+  position: absolute;
+  z-index: 1;
 }
 
 .points {
