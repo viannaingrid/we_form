@@ -32,12 +32,13 @@ aside span {
 }
 
 main {
-  width: 60rem;
-  height: 52rem;
+  width: 63rem;
+  height: 60rem;
   border: var(--default-border);
   padding: 4.4rem 5.7rem;
   border-radius: var(--default-border-radius);
   grid-area: form;
+  position: relative;
 }
 main h2 {
   max-width: 43rem;
@@ -80,6 +81,17 @@ footer a {
   color: #000;
 }
 
+header {
+  display: flex;
+  gap: 0 1.8rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+header i {
+  font-size: 2.4rem;
+  color: #FF567B;
+}
+
 input {
   width: 489px;
   height: 5.5rem;
@@ -94,6 +106,11 @@ input::-moz-placeholder {
 input::placeholder {
   color: #bab7b7;
   padding: 0 0 0 1rem;
+}
+input + button {
+  position: absolute;
+  right: 0;
+  top: 2.7rem;
 }
 
 label {
